@@ -41,13 +41,12 @@
 
     <!-- Attach a Fallback value to a CSS Variable -->
     <!-- Improve Compatibility with Browser Fallbacks -->
+    <!-- Change a variable for a specific area -->
     <style>
-        /* Inherit CSS Variables */
       :root {
-        /* Only change code below this line */
+        --penguin-skin: gray;
         --penguin-belly: pink;
-
-        /* Only change code above this line */
+        --penguin-beak: orange;
       }
 
       body {
@@ -55,8 +54,9 @@
       }
 
       .penguin {
-        --penguin-skin: gray;
-        --penguin-beak: orange;
+        /* Only change code below this line */
+        --penguin-belly: white;
+        /* Only change code above this line */
         position: relative;
         margin: auto;
         display: block;
@@ -68,7 +68,7 @@
       .right-cheek {
         top: 15%;
         left: 35%;
-        background: var(--penguin-belly, white);
+        background: var(--penguin-belly, pink);
         width: 60%;
         height: 70%;
         border-radius: 70% 70% 60% 60%;
@@ -77,7 +77,7 @@
       .left-cheek {
         top: 15%;
         left: 5%;
-        background: var(--penguin-belly, white);
+        background: var(--penguin-belly, pink);
         width: 60%;
         height: 70%;
         border-radius: 70% 70% 60% 60%;
@@ -86,7 +86,7 @@
       .belly {
         top: 60%;
         left: 2.5%;
-        background: var(--penguin-belly, white);
+        background: var(--penguin-belly, pink);
         width: 95%;
         height: 100%;
         border-radius: 120% 120% 100% 100%;
